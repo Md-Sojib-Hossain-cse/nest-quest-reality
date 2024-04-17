@@ -85,7 +85,7 @@ const Register = () => {
     }
 
     return (
-        <div className="card shrink-0 w-full md:w-2/3 lg:w-1/2 mx-auto shadow-2xl bg-base-100 mt-24">
+        <div className="card shrink-0 w-full md:w-2/3 lg:w-1/2 mx-auto shadow-2xl bg-base-100 mt-8">
             <div className="bg-blue-700 rounded-t-xl">
                 <h3 className="text-2xl font-bold text-center mt-8 drop-shadow-lg text-white">NestQuest Register!</h3>
                 <div className="pt-6">

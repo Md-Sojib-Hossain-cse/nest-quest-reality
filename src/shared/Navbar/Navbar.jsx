@@ -17,43 +17,45 @@ const Navbar = () => {
         <li className="text-lg font-medium hover:font-semibold hover:shadow-lg"><NavLink to="/register">Register</NavLink></li>
     </>
     return (
-        <div className="navbar bg-[#FFFFFF33] backdrop-blur-sm border border-[#FFFFFF33] rounded-b-xl fixed top-0 z-10">
-            <div className="navbar-start">
-                <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        <div className="bg-[#FFFFFF33] border border-[#FFFFFF33] rounded-b-xl sticky top-0 z-10">
+            <div className="navbar max-w-7xl mx-auto  backdrop-blur-sm ">
+                <div className="navbar-start">
+                    <div className="dropdown">
+                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            {navLinks}
+                        </ul>
                     </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <a className="text-xl md:text-2xl lg:text-3xl font-bold drop-shadow-lg">NestQuest Realty</a>
+                </div>
+                <div className="navbar-center hidden lg:flex">
+                    <ul className="menu menu-horizontal px-1">
                         {navLinks}
                     </ul>
                 </div>
-                <a className="text-xl md:text-2xl lg:text-3xl font-bold drop-shadow-lg">NestQuest Realty</a>
-            </div>
-            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    {navLinks}
-                </ul>
-            </div>
-            <div className="navbar-end">
-                {
-                    user ?
-                        <div className="flex gap-2 md:gap-4 justify-center items-center">
-                            {user?.photoURL ?
-                                <div className="avatar online">
-                                    <div className="w-10 rounded-full">
-                                        <img title={`${user?.displayName}`} src={user?.photoURL} />
+                <div className="navbar-end">
+                    {
+                        user ?
+                            <div className="flex gap-2 md:gap-4 justify-center items-center">
+                                {user?.photoURL ?
+                                    <div className="avatar online">
+                                        <div className="w-10 rounded-full">
+                                            <img title={`${user?.displayName}`} src={user?.photoURL} />
+                                        </div>
+                                    </div> :
+                                    <div className="avatar online">
+                                        <div className="w-10 rounded-full">
+                                            <img src="https://i.ibb.co/sbkyhCp/blank-profile.png" />
+                                        </div>
                                     </div>
-                                </div> :
-                                <div className="avatar online">
-                                    <div className="w-10 rounded-full">
-                                        <img src="https://i.ibb.co/sbkyhCp/blank-profile.png" />
-                                    </div>
-                                </div>
-                            }
-                            <a onClick={handleLogOut} className="btn text-lg shadow-lg font-bold">LogOut</a>
-                        </div> :
-                        <Link to="/login" className="btn text-lg shadow-lg font-bold">Login</Link>
-                }
+                                }
+                                <a onClick={handleLogOut} className="btn text-lg shadow-lg font-bold">LogOut</a>
+                            </div> :
+                            <Link to="/login" className="btn text-lg shadow-lg font-bold">Login</Link>
+                    }
+                </div>
             </div>
         </div>
     );

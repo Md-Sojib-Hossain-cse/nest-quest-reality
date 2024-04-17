@@ -1,0 +1,163 @@
+[
+    {
+        "id": 1,
+        "estate_title": "Spacious Family Home",
+        "segment_name": "Single-family homes",
+        "short_description": "Beautiful single-family home with ample space for a growing family.",
+        "detailed_description": "This beautiful single-family home offers ample space for a growing family. With four bedrooms, three bathrooms, and a spacious backyard, it provides plenty of room for both indoor and outdoor activities. The open-concept design creates a warm and inviting atmosphere, perfect for entertaining guests or relaxing with loved ones. Situated in a family-friendly neighborhood with convenient access to schools, parks, and shopping, this home is ideal for those seeking comfort, convenience, and community.",
+        "price": "$450,000",
+        "status": "sale",
+        "area": "2,500 sq ft",
+        "location": "Suburbia Estates, Anytown, USA",
+        "facilities": [
+            "4 Bedrooms",
+            "3 Bathrooms",
+            "Backyard Garden"
+        ],
+        "image": "family_home.jpg",
+        "button_text": "View Property"
+    },
+    {
+        "id": 2,
+        "estate_title": "Townhouse Retreat",
+        "segment_name": "Townhouses",
+        "short_description": "Modern townhouse offering urban convenience and style.",
+        "detailed_description": "Experience modern urban living in this stylish townhouse. With its sleek design, spacious layout, and convenient location, it offers the perfect combination of comfort and convenience. The open-concept living area is perfect for entertaining guests, while the private outdoor space provides a tranquil retreat from the hustle and bustle of city life. Situated in a vibrant neighborhood with easy access to restaurants, shops, and public transportation, this townhouse is ideal for those seeking a modern lifestyle in the heart of the city.",
+        "price": "$350,000",
+        "status": "sale",
+        "area": "1,800 sq ft",
+        "location": "City Center, Metropolis, USA",
+        "facilities": [
+            "3 Bedrooms",
+            "2.5 Bathrooms",
+            "Private Garage"
+        ],
+        "image": "townhouse_retreat.jpg",
+        "button_text": "View Property"
+    },
+    {
+        "id": 3,
+        "estate_title": "City View Apartment",
+        "segment_name": "Apartments",
+        "short_description": "Luxurious apartment with stunning views of the city skyline.",
+        "detailed_description": "Indulge in luxury living in this stunning apartment with breathtaking views of the city skyline. With its sleek design, high-end finishes, and state-of-the-art amenities, it offers the ultimate urban retreat. The spacious layout includes a gourmet kitchen, elegant living area, and private balcony, perfect for entertaining or simply enjoying the view. Located in a prime downtown location with easy access to dining, shopping, and entertainment options, this apartment is ideal for those seeking a sophisticated urban lifestyle.",
+        "price": "$2,500/month",
+        "status": "rent",
+        "area": "1,200 sq ft",
+        "location": "Downtown District, Metropolis, USA",
+        "facilities": [
+            "2 Bedrooms",
+            "2 Bathrooms",
+            "Fitness Center Access"
+        ],
+        "image": "city_view_apartment.jpg",
+        "button_text": "View Property"
+    },
+    {
+        "id": 4,
+        "estate_title": "Student Housing Complex",
+        "segment_name": "Student housing",
+        "short_description": "Modern student accommodation near campus with shared facilities.",
+        "detailed_description": "Discover modern student living in this conveniently located housing complex. With its fully furnished rooms, shared amenities, and close proximity to campus, it offers everything students need for a comfortable and convenient college experience. The communal areas include study lounges, a fitness center, and a social lounge, providing plenty of opportunities for studying, socializing, and relaxation. Located within walking distance of campus and local amenities, this housing complex is perfect for students seeking convenience and community.",
+        "price": "$800/month (per room)",
+        "status": "rent",
+        "area": "Varies",
+        "location": "Campus Commons, University City, USA",
+        "facilities": [
+            "Fully Furnished Rooms",
+            "Study Areas",
+            "Common Lounge"
+        ],
+        "image": "student_housing_complex.jpg",
+        "button_text": "View Property"
+    },
+    {
+        "id": 5,
+        "estate_title": "Senior Living Community",
+        "segment_name": "Senior living communities",
+        "short_description": "Retirement community offering comfort, care, and companionship.",
+        "detailed_description": "Experience the best in senior living in this vibrant retirement community. With its resort-style amenities, beautiful surroundings, and welcoming atmosphere, it offers the perfect blend of comfort, care, and companionship. The community features spacious apartments, delicious dining options, and a wide range of activities and events, ensuring there's always something to enjoy. Whether you're looking for relaxation, socialization, or adventure, this community provides the ideal setting for your retirement years.",
+        "price": "Starting at $3,000/month",
+        "status": "rent",
+        "area": "Varies",
+        "location": "Tranquil Meadows Retirement Village, Serenity City, USA",
+        "facilities": [
+            "24/7 Staff Assistance",
+            "Community Activities",
+            "Gardens"
+        ],
+        "image": "senior_living_community.jpg",
+        "button_text": "View Property"
+    },
+    {
+        "id": 6,
+        "estate_title": "Beachfront Villa",
+        "segment_name": "Vacation rentals",
+        "short_description": "Luxurious villa with private beach access and panoramic ocean views.",
+        "detailed_description": "Escape to paradise in this stunning beachfront villa. With its luxurious accommodations, private beach access, and panoramic ocean views, it offers the ultimate tropical getaway. The villa features spacious living areas, elegant bedrooms, and a gourmet kitchen, perfect for entertaining or simply relaxing in style. Outside, the expansive deck is ideal for lounging in the sun or enjoying alfresco dining with family and friends. Whether you're seeking adventure or relaxation, this villa provides the perfect setting for an unforgettable vacation.",
+        "price": "$600/night",
+        "status": "rent",
+        "area": "3,500 sq ft",
+        "location": "Seaside Paradise Resort, Beachtown, USA",
+        "facilities": [
+            "Private Beach Access",
+            "Infinity Pool",
+            "Outdoor Dining Area"
+        ],
+        "image": "beachfront_villa.jpg",
+        "button_text": "View Property"
+    },
+    {
+        "id": 7,
+        "estate_title": "Modern Studio Apartment",
+        "segment_name": "Apartments",
+        "short_description": "Sleek studio apartment in the heart of the city, perfect for urban living.",
+        "detailed_description": "Experience modern urban living in this sleek studio apartment. With its minimalist design, functional layout, and central location, it offers the perfect blend of style and convenience. The open-plan living area is flooded with natural light, creating a bright and airy atmosphere, while the compact kitchen is equipped with modern appliances and ample storage space. Situated in the heart of the city, this apartment is surrounded by a wealth of dining, shopping, and entertainment options, making it ideal for those seeking a vibrant urban lifestyle.",
+        "price": "$1,200/month",
+        "status": "rent",
+        "area": "600 sq ft",
+        "location": "Downtown District, Metropolis, USA",
+        "facilities": [
+            "Open Concept Design",
+            "Close to Public Transit"
+        ],
+        "image": "studio_apartment.jpg",
+        "button_text": "View Property"
+    },
+    {
+        "id": 8,
+        "estate_title": "Lakeview Retreat",
+        "segment_name": "Vacation rentals",
+        "short_description": "Cozy cabin with serene lake views, ideal for a peaceful getaway.",
+        "detailed_description": "Escape to nature in this charming lakeview cabin. With its cozy interior, panoramic lake views, and tranquil setting, it offers the perfect retreat from the hustle and bustle of everyday life. The cabin features a rustic-chic design, with comfortable furnishings, a wood-burning fireplace, and a fully equipped kitchen. Outside, the spacious deck overlooks the serene lake, providing the perfect spot for morning coffee or evening cocktails. Whether you're seeking adventure or relaxation, this cabin provides the perfect setting for a memorable vacation.",
+        "price": "$300/night",
+        "status": "rent",
+        "area": "1,000 sq ft",
+        "location": "Lakeview Cabins, Lakeside Village, USA",
+        "facilities": [
+            "Lakefront Deck",
+            "Fireplace",
+            "Hiking Trails Nearby"
+        ],
+        "image": "lakeview_retreat.jpg",
+        "button_text": "View Property"
+    },
+    {
+        "id": 9,
+        "estate_title": "City Center Condo",
+        "segment_name": "Apartments",
+        "short_description": "Modern condo with city views and convenient access to amenities.",
+        "detailed_description": "Experience urban living at its finest in this modern city center condo. With its sleek design, high-end finishes, and stunning city views, it offers the ultimate in luxury and convenience. The open-plan living area is perfect for entertaining, while the gourmet kitchen is equipped with top-of-the-line appliances and plenty of counter space. Situated in the heart of the city, this condo is just steps away from a wide range of dining, shopping, and entertainment options, making it ideal for those seeking a vibrant urban lifestyle.",
+        "price": "$400,000",
+        "status": "sale",
+        "area": "1,000 sq ft",
+        "location": "City Center, Metropolis, USA",
+        "facilities": [
+            "1 Bedroom",
+            "1 Bathroom",
+            "Gym Access"
+        ],
+        "image": "city_center_condo.jpg",
+        "button_text": "View Property"
+    }
+]
