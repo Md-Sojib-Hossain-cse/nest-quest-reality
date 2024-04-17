@@ -1,13 +1,23 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider/AuthProvider";
 
 const Navbar = () => {
+    const { user, LogOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        LogOut()
+    }
+
+
     const navLinks = <>
-    <li><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to="/login">Login</NavLink></li>
-    <li><NavLink to="/register">Register</NavLink></li>
+        <li className="text-lg font-medium hover:font-semibold hover:shadow-lg"><NavLink to="/">Home</NavLink></li>
+        <li className="text-lg font-medium hover:font-semibold hover:shadow-lg"><NavLink to="/updateProfile">Update Profile</NavLink></li>
+        <li className="text-lg font-medium hover:font-semibold hover:shadow-lg"><NavLink to="/login">Login</NavLink></li>
+        <li className="text-lg font-medium hover:font-semibold hover:shadow-lg"><NavLink to="/register">Register</NavLink></li>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-[#FFFFFF33] backdrop-blur-sm border border-[#FFFFFF33] rounded-b-xl fixed top-0 z-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -17,7 +27,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">NestQuest Realty</a>
+                <a className="text-xl md:text-2xl lg:text-3xl font-bold drop-shadow-lg">NestQuest Realty</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -25,7 +35,25 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Login</a>
+                {
+                    user ?
+                        <div className="flex gap-2 md:gap-4 justify-center items-center">
+                            {user?.photoURL ?
+                                <div className="avatar online">
+                                    <div className="w-10 rounded-full">
+                                        <img title={`${user?.displayName}`} src={user?.photoURL} />
+                                    </div>
+                                </div> :
+                                <div className="avatar online">
+                                    <div className="w-10 rounded-full">
+                                        <img src="https://i.ibb.co/sbkyhCp/blank-profile.png" />
+                                    </div>
+                                </div>
+                            }
+                            <a onClick={handleLogOut} className="btn text-lg shadow-lg font-bold">LogOut</a>
+                        </div> :
+                        <Link to="/login" className="btn text-lg shadow-lg font-bold">Login</Link>
+                }
             </div>
         </div>
     );
