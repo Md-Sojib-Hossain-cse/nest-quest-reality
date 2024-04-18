@@ -32,7 +32,12 @@ const UpdateProfile = () => {
             <Helmet>
                 <title> NestQuest Reality | Update Profile</title>
             </Helmet>
-            <h4 className="text-2xl font-semibold text-black drop-shadow-lg mt-8 text-center">Update User Information!</h4>
+            <div className="bg-blue-700 rounded-t-xl">
+                <h3 className="text-2xl font-bold text-center mt-8 drop-shadow-lg text-white">NestQuest Update Profile!</h3>
+                <div className="pt-6">
+                    <img src="https://i.ibb.co/61dPY8g/Humaaans-Wireframe.png" alt="" className="w-32 mx-auto" />
+                </div>
+            </div>
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-2 p-6 rounded-lg shadow-lg">
                 <label htmlFor="name">Name</label>
                 <input

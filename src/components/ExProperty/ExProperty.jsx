@@ -1,4 +1,8 @@
 import PropTypes from "prop-types"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
 const ExProperty = ({ property }) => {
     const { title, image, description, selling_price, rental_price_per_night, features } = property;
     return (
@@ -18,7 +22,9 @@ const ExProperty = ({ property }) => {
                     </ul>
                 </div>
             </div>
-            <div className="lg:hidden py-6">
+            <div data-aos="fade-up"
+                data-aos-duration="2000"
+                className="lg:hidden py-6">
                 <h4 className="text-2xl font-semibold drop-shadow-lg text-center">{title}</h4>
                 <p className="text-base font-normal italic mt-4 text-center px-8">{description}</p>
                 <p className="text-lg font-medium drop-shadow-lg pl-6"><span className="text-base text-green-500">Selling Price</span> : {selling_price}</p>
