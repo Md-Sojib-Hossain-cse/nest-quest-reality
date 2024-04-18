@@ -1,0 +1,5 @@
+
+#imgDiv:hover #filterDiv{
+    width: 100%;
+    transition: 1s;
+}

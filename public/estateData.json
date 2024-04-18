@@ -14,7 +14,7 @@
             "3 Bathrooms",
             "Backyard Garden"
         ],
-        "image": "family_home.jpg",
+        "image": "https://i.ibb.co/RvVByST/speciousfamilyhome.jpg",
         "button_text": "View Property"
     },
     {
@@ -32,7 +32,7 @@
             "2.5 Bathrooms",
             "Private Garage"
         ],
-        "image": "townhouse_retreat.jpg",
+        "image": "https://i.ibb.co/tXjv4Bs/townhouse-Retreat.jpg",
         "button_text": "View Property"
     },
     {
@@ -50,7 +50,7 @@
             "2 Bathrooms",
             "Fitness Center Access"
         ],
-        "image": "city_view_apartment.jpg",
+        "image": "https://i.ibb.co/7nt11vN/city-View-Apertment.jpg",
         "button_text": "View Property"
     },
     {
@@ -68,7 +68,7 @@
             "Study Areas",
             "Common Lounge"
         ],
-        "image": "student_housing_complex.jpg",
+        "image": "https://i.ibb.co/VJpFQ5K/student-Housing-Complex.jpg",
         "button_text": "View Property"
     },
     {
@@ -86,7 +86,7 @@
             "Community Activities",
             "Gardens"
         ],
-        "image": "senior_living_community.jpg",
+        "image": "https://i.ibb.co/j4dQ1Zg/banner4.jpg",
         "button_text": "View Property"
     },
     {
@@ -104,7 +104,7 @@
             "Infinity Pool",
             "Outdoor Dining Area"
         ],
-        "image": "beachfront_villa.jpg",
+        "image": "https://i.ibb.co/KstCPnj/beachvilla.jpg",
         "button_text": "View Property"
     },
     {
@@ -121,7 +121,7 @@
             "Open Concept Design",
             "Close to Public Transit"
         ],
-        "image": "studio_apartment.jpg",
+        "image": "https://i.ibb.co/Jswgfvm/modern-Studio-Apertment.jpg",
         "button_text": "View Property"
     },
     {
@@ -139,7 +139,7 @@
             "Fireplace",
             "Hiking Trails Nearby"
         ],
-        "image": "lakeview_retreat.jpg",
+        "image": "https://i.ibb.co/YNLHsgr/lakeview-Retreat.jpg",
         "button_text": "View Property"
     },
     {
@@ -157,7 +157,7 @@
             "1 Bathroom",
             "Gym Access"
         ],
-        "image": "city_center_condo.jpg",
+        "image": "https://i.ibb.co/NxtnG4T/city-Center-Condo.jpg",
         "button_text": "View Property"
     }
 ]
