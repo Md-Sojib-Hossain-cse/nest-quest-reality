@@ -13,12 +13,12 @@ const Estates = ({ estateDatas }) => {
             <div className="mt-8 grid lg:grid-cols-2 gap-6">
                 {
                     showAll ?
-                        estateDatas.slice(0,6).map(estateData => <Estate key={estateDatas.id} estateData={estateData}></Estate>) :
-                        estateDatas.map(estateData => <Estate key={estateDatas.id} estateData={estateData}></Estate>)
+                        estateDatas.map(estateData => <Estate key={estateData.id} estateData={estateData}></Estate>) :
+                        estateDatas.slice(0,6).map(estateData => <Estate key={estateData.id} estateData={estateData}></Estate>)
                 }
             </div>
             <div className="flex justify-center mt-6">
-                <button onClick={handleShowAll} className="btn text-lg shadow-lg font-bold">{showAll ? "Show All" : "Show Less"}</button>
+                <button onClick={handleShowAll} className="btn text-lg shadow-lg font-bold">{showAll ? "Show Less" : "Show More"}</button>
             </div>
         </div>
     );

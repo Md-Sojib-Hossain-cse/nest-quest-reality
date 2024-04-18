@@ -6,16 +6,20 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
+import EstateDetails from "../pages/EstateDetails/EstateDetails";
+import ProtectedRoute from "../protectedRoutes/ProtectedRoute";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
         {
             path: "/",
             element: <Root></Root>,
+            errorElement : <ErrorPage></ErrorPage> ,
             children : [  
                 {
                     path : "/",
                     element : <Home></Home>,
-                    loader : () => fetch('./estateData.json'),
+                    loader : () => fetch('/estateData.json'),
                 },
                 {
                     path : "/updateProfile",
@@ -28,6 +32,11 @@ const router = createBrowserRouter([
                 {
                     path : "/register",
                     element : <Register></Register>,
+                },
+                {
+                    path : "/estateDetails/:id",
+                    element : <ProtectedRoute><EstateDetails></EstateDetails></ProtectedRoute>,
+                    loader : () => fetch('/estateData.json'),
                 },
             ]
         },

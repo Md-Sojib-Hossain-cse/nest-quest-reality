@@ -15,7 +15,9 @@
             "Backyard Garden"
         ],
         "image": "https://i.ibb.co/RvVByST/speciousfamilyhome.jpg",
-        "button_text": "View Property"
+        "button_text": "View Property",
+        "banner_title": "Welcome Home to Spacious Comfort",
+        "banner_description": "Discover the perfect family retreat with our spacious home offerings. Embrace comfort, space, and community in our family-friendly properties."
     },
     {
         "id": 2,
@@ -33,7 +35,9 @@
             "Private Garage"
         ],
         "image": "https://i.ibb.co/tXjv4Bs/townhouse-Retreat.jpg",
-        "button_text": "View Property"
+        "button_text": "View Property",
+        "banner_title": "Urban Living, Refined",
+        "banner_description": "Experience modern urban living at its finest with our stylish townhouses. Enjoy the perfect blend of comfort and convenience in vibrant city settings."
     },
     {
         "id": 3,
@@ -51,7 +55,9 @@
             "Fitness Center Access"
         ],
         "image": "https://i.ibb.co/7nt11vN/city-View-Apertment.jpg",
-        "button_text": "View Property"
+        "button_text": "View Property",
+        "banner_title": "Skyline Living Redefined",
+        "banner_description": "Elevate your urban lifestyle with breathtaking city views from our luxurious apartments. Indulge in sophisticated living in the heart of the city."
     },
     {
         "id": 4,
@@ -69,7 +75,9 @@
             "Common Lounge"
         ],
         "image": "https://i.ibb.co/VJpFQ5K/student-Housing-Complex.jpg",
-        "button_text": "View Property"
+        "button_text": "View Property",
+        "banner_title": "Student Living Made Easy",
+        "banner_description": "Find your perfect student accommodation with our modern housing complexes. Enjoy convenience, comfort, and community just steps away from campus."
     },
     {
         "id": 5,
@@ -87,7 +95,9 @@
             "Gardens"
         ],
         "image": "https://i.ibb.co/j4dQ1Zg/banner4.jpg",
-        "button_text": "View Property"
+        "button_text": "View Property",
+        "banner_title": "Retirement Redefined",
+        "banner_description": "Experience the best in senior living with our vibrant retirement communities. Discover comfort, care, and companionship in beautiful surroundings."
     },
     {
         "id": 6,
@@ -105,7 +115,9 @@
             "Outdoor Dining Area"
         ],
         "image": "https://i.ibb.co/KstCPnj/beachvilla.jpg",
-        "button_text": "View Property"
+        "button_text": "View Property",
+        "banner_title": "Escape to Paradise",
+        "banner_description": "Indulge in the ultimate tropical getaway with our luxurious beachfront villas. Enjoy private beach access and panoramic ocean views."
     },
     {
         "id": 7,
@@ -122,7 +134,9 @@
             "Close to Public Transit"
         ],
         "image": "https://i.ibb.co/Jswgfvm/modern-Studio-Apertment.jpg",
-        "button_text": "View Property"
+        "button_text": "View Property",
+        "banner_title": "Sleek Urban Retreats",
+        "banner_description": "Discover minimalist living with our sleek studio apartments. Experience style, convenience, and vibrant city living."
     },
     {
         "id": 8,
@@ -140,7 +154,9 @@
             "Hiking Trails Nearby"
         ],
         "image": "https://i.ibb.co/YNLHsgr/lakeview-Retreat.jpg",
-        "button_text": "View Property"
+        "button_text": "View Property",
+        "banner_title": "Escape to Lakeview Serenity",
+        "banner_description": "Escape to the serenity of our Lakeview Retreat. Nestled amidst lush greenery, our retreat offers breathtaking views of the tranquil lake. Unwind in luxurious accommodations, savor gourmet cuisine, and indulge in a variety of recreational activities. Whether you're seeking a romantic getaway or a family retreat, experience relaxation and rejuvenation at Lakeview Retreat."
     },
     {
         "id": 9,
@@ -158,6 +174,7 @@
             "Gym Access"
         ],
         "image": "https://i.ibb.co/NxtnG4T/city-Center-Condo.jpg",
-        "button_text": "View Property"
+        "banner_title": "Experience Urban Luxury",
+        "banner_description": "Discover urban living at its finest with our City Center Condo. Located in the heart of the bustling city, our condo offers stylish and modern accommodations within walking distance to top attractions, dining, and entertainment venues. Enjoy unparalleled convenience and comfort with state-of-the-art amenities and personalized service. Experience the vibrant energy of the city from the comfort of your luxurious condo at City Center."
     }
 ]

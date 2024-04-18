@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import { IoLogoGoogle, IoLogoFacebook } from "react-icons/io5";
@@ -10,6 +10,8 @@ const Login = () => {
     const credentialError = () => toast.error("Email or Password Not matched!", {
         position: "top-center",
     });
+    const location = useLocation();
+    const navigate = useNavigate();
 
     //sign in user with email password
     const handleSignIn = e => {
@@ -26,6 +28,7 @@ const Login = () => {
                     text: "Successfully Signed In!",
                     icon: "success"
                 });
+                navigate(location.state)
                 form.reset();
             })
             .catch(error => {
