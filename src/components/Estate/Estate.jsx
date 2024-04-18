@@ -12,7 +12,9 @@ const Estate = ({ estateData }) => {
     const { id, estate_title, short_description, price, status, area, facilities, image, button_text, location } = estateData;
 
     return (
-        <div data-aos="zoom-in-left" id="imgDiv" className="grid md:grid-cols-5 lg:grid-cols-1 xl:grid-cols-5 justify-between gap-6 bg-[#13131344] shadow-lg drop-shadow-lg p-4 rounded-lg">
+        <div data-aos="fade-up"
+        data-aos-duration="1000"
+        id="imgDiv" className="grid md:grid-cols-5 lg:grid-cols-1 xl:grid-cols-5 justify-between gap-6 bg-[#13131344] shadow-lg drop-shadow-lg p-4 rounded-lg">
             <div className="relative col-span-3 w-full">
                 <img src={image} alt="property image unavailable" className="w-full h-60 md:h-full lg:h-80 xl:h-full object-cover rounded-lg" />
                 <div id="filterDiv" className="absolute h-full w-0 bg-[#13131344] top-0 rounded-lg"></div>

@@ -1,8 +1,29 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# NestQuest Reality
 
-Currently, two official plugins are available:
+Welcome to our dedicated real estate website, focusing exclusively on residential properties. Explore a diverse range of single-family homes, townhouses, apartments, and vacation rentals tailored to meet your lifestyle needs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+## Live Link
+
+[Visit NestQuest Reality](https://www.your-website.com)
+
+
+
+## Features
+
+- Simple and user friendly UI
+- Managing User data using Firebase
+- Social media logging makes your life easiar
+- Unclock Extra features by logging our website
+- Simple and Eye catchy animations
+
+
+
+## Npm packeges Used
+
+- AOS Packege
+- React hook form
+- Animate.css
