@@ -17,7 +17,6 @@ const AuthProvider = ({ children }) => {
 
     //Register an user
     const createUser = (email, password) => {
-        setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
     }
 
@@ -29,7 +28,6 @@ const AuthProvider = ({ children }) => {
 
     //Logout current User
     const LogOut = () => {
-        setLoading(true)
         return signOut(auth)
     }
 
@@ -59,6 +57,7 @@ const AuthProvider = ({ children }) => {
     } , [])
 
 
+    //update Profile
     const updateUserProfile = (user , userInfo) => {
         return updateProfile(user , userInfo);
     }

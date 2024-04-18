@@ -12,40 +12,40 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import ExclusiveProperties from "../pages/ExclusiveProperties/ExclusiveProperties";
 
 const router = createBrowserRouter([
-        {
-            path: "/",
-            element: <Root></Root>,
-            errorElement : <ErrorPage></ErrorPage> ,
-            children : [  
-                {
-                    path : "/",
-                    element : <Home></Home>,
-                    loader : () => fetch('/estateData.json'),
-                },
-                {
-                    path : "/updateProfile",
-                    element : <UpdateProfile></UpdateProfile>,
-                },
-                {
-                    path : "/login",
-                    element : <Login></Login>,
-                },
-                {
-                    path : "/register",
-                    element : <Register></Register>,
-                },
-                {
-                    path : "/estateDetails/:id",
-                    element : <ProtectedRoute><EstateDetails></EstateDetails></ProtectedRoute>,
-                    loader : () => fetch('/estateData.json'),
-                },
-                {
-                    path : "exclusiveProperties",
-                    element : <ProtectedRoute><ExclusiveProperties></ExclusiveProperties></ProtectedRoute>,
-                    loader : () => fetch("/exclusiveProperties.json"),
-                }
-            ]
-        },
-    ]);
+    {
+        path: "/",
+        element: <Root></Root>,
+        errorElement: <ErrorPage></ErrorPage>,
+        children: [
+            {
+                path: "/",
+                element: <Home></Home>,
+                loader: () => fetch('/estateData.json'),
+            },
+            {
+                path: "/updateProfile",
+                element: <ProtectedRoute><UpdateProfile></UpdateProfile></ProtectedRoute>,
+            },
+            {
+                path: "/login",
+                element: <Login></Login>,
+            },
+            {
+                path: "/register",
+                element: <Register></Register>,
+            },
+            {
+                path: "/estateDetails/:id",
+                element: <ProtectedRoute><EstateDetails></EstateDetails></ProtectedRoute>,
+                loader: () => fetch('/estateData.json'),
+            },
+            {
+                path: "exclusiveProperties",
+                element: <ProtectedRoute><ExclusiveProperties></ExclusiveProperties></ProtectedRoute>,
+                loader: () => fetch("/exclusiveProperties.json"),
+            }
+        ]
+    },
+]);
 
 export default router;

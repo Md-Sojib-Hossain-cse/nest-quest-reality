@@ -12,10 +12,10 @@ const Navbar = () => {
 
     const navLinks = <>
         <li className="text-lg font-medium hover:font-semibold hover:shadow-lg"><NavLink to="/">Home</NavLink></li>
-        <li className="text-lg font-medium hover:font-semibold hover:shadow-lg"><NavLink to="/updateProfile">Update Profile</NavLink></li>
+        {user && <li className="text-lg font-medium hover:font-semibold hover:shadow-lg"><NavLink to="/updateProfile">Update Profile</NavLink></li>}
+        {user && <li className="text-lg font-medium hover:font-semibold hover:shadow-lg"><NavLink to="/exclusiveProperties">Exclusive Properties</NavLink></li>}
         <li className="text-lg font-medium hover:font-semibold hover:shadow-lg"><NavLink to="/login">Login</NavLink></li>
         <li className="text-lg font-medium hover:font-semibold hover:shadow-lg"><NavLink to="/register">Register</NavLink></li>
-        {user && <li className="text-lg font-medium hover:font-semibold hover:shadow-lg"><NavLink to="/exclusiveProperties">Exclusive Properties</NavLink></li>}
     </>
     return (
         <div className="bg-[#FFFFFF33] border border-[#FFFFFF33] rounded-b-xl sticky top-0 z-10">

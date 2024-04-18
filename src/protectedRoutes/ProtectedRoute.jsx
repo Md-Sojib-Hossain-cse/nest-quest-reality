@@ -9,11 +9,9 @@ const ProtectedRoute = ({children}) => {
     const path = locaiton.pathname;
 
     if(loading){
-        return <div className="min-h-screen flex justify-center items-center">
-            <span className="loading loading-spinner loading-lg"></span>
-        </div>
+        return <span className="loading loading-spinner loading-lg"></span>
     }
-
+    
     if(user){
         return children
     }
