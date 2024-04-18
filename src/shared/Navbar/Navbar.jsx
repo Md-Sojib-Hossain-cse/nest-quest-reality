@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider/AuthProvider";
 
 const Navbar = () => {
-    const { user, LogOut , loading } = useContext(AuthContext);
+    const { user, LogOut } = useContext(AuthContext);
 
     const handleLogOut = () => {
         LogOut()
@@ -38,7 +38,6 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     {
-                        loading ? <span className="loading loading-spinner loading-sm mr-12"></span> :
                         user ?
                             <div className="flex gap-2 md:gap-4 justify-center items-center">
                                 {user?.photoURL ?

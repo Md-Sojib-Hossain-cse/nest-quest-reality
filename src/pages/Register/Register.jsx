@@ -5,12 +5,15 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
+import { IoEye, IoEyeOff } from "react-icons/io5";
 
 
 const Register = () => {
 
-    const { createUser, passwordError, setPasswordError  , updateUserProfile} = useContext(AuthContext);
+    const { createUser, passwordError, setPasswordError, updateUserProfile } = useContext(AuthContext);
     const [registerError, setRegisterError] = useState(null);
+    const [showPassword, setShowPassword] = useState(false);
+
     const nameValidationToast = () => toast.warn("Name Not Found!", {
         position: "top-center",
     });
@@ -33,7 +36,7 @@ const Register = () => {
         const photoURL = e.target.photoURL.value;
         const password = e.target.password.value;
         const form = e.target;
-        const userInfo = {displayName : name , photoURL : photoURL};
+        const userInfo = { displayName: name, photoURL: photoURL };
 
         if (!name) {
             nameValidationToast();
@@ -77,12 +80,17 @@ const Register = () => {
                     icon: "success"
                 });
                 form.reset();
-                updateUserProfile(user , userInfo)
+                updateUserProfile(user, userInfo)
             })
             .catch(error => {
                 const errorMessage = error?.message;
                 setRegisterError(errorMessage.split(":")[1]);
             })
+    }
+
+    //show password 
+    const handleShowPassword = () => {
+        setShowPassword(!showPassword);
     }
 
     return (
@@ -115,11 +123,18 @@ const Register = () => {
                     </label>
                     <input type="text" name="photoURL" placeholder="Photo URL" className="input input-bordered drop-shadow-lg" />
                 </div>
-                <div className="form-control">
+                <div className="form-control relative">
                     <label className="label">
                         <span className="label-text text-lg font-medium drop-shadow-lg">Password</span>
                     </label>
-                    <input type="password" name="password" placeholder="password" className="input input-bordered drop-shadow-lg" />
+                    <button onClick={handleShowPassword} className="absolute top-[58px] text-xl right-4 z-10">
+                        {
+                            showPassword ?
+                                <IoEyeOff /> :
+                                <IoEye />
+                        }
+                    </button>
+                    <input type={showPassword ? "text" : "password"} name="password" placeholder="password" className="input input-bordered drop-shadow-lg" />
                     <span className="text-red-600">{passwordError}</span>
                     {registerError && <p className="text-red-600">{registerError}</p>}
                     <label className="label">

@@ -1,12 +1,14 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import { IoLogoGoogle, IoLogoFacebook } from "react-icons/io5";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
+import { IoEye, IoEyeOff } from "react-icons/io5";
 
 const Login = () => {
+    const [showPassword, setShowPassword] = useState(false);
     const { signInUser, user, LogOut, googleSignIn, facebookSignIn } = useContext(AuthContext);
     const credentialError = () => toast.error("Email or Password Not matched!", {
         position: "top-center",
@@ -69,6 +71,11 @@ const Login = () => {
         LogOut()
     }
 
+    //show password 
+    const handleShowPassword = () => {
+        setShowPassword(!showPassword);
+    }
+
 
     return (
         <div className="card shrink-0 w-full md:w-2/3 lg:w-1/2 mx-auto shadow-2xl bg-base-100 mt-8">
@@ -88,11 +95,18 @@ const Login = () => {
                     </label>
                     <input type="email" name="email" placeholder="Your Email" className="input input-bordered drop-shadow-lg" />
                 </div>
-                <div className="form-control">
+                <div className="form-control relative">
                     <label className="label">
                         <span className="label-text text-lg font-medium drop-shadow-lg">Password</span>
+                        <button onClick={handleShowPassword} className="absolute top-[58px] text-xl right-4 z-10">
+                            {
+                                showPassword ?
+                                    <IoEyeOff /> :
+                                    <IoEye />
+                            }
+                        </button>
                     </label>
-                    <input type="password" name="password" placeholder="password" className="input input-bordered drop-shadow-lg" />
+                    <input type={showPassword ? "text" : "password"} name="password" placeholder="password" className="input input-bordered drop-shadow-lg" />
                     <label className="label">
                         <a href="#" className="label-text-alt link link-hover text-sm font-medium">Forgot password?</a>
                     </label>
