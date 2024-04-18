@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Contemporary Urban Loft",
+        "image": "https://i.ibb.co/WpnNXCM/exHouse2.jpg",
+        "pricing": "$1,200,000",
+        "description": "Discover modern elegance in the heart of the city with this stunning urban loft. Boasting sleek architectural design and expansive city views, this loft offers an unparalleled living experience. Featuring open-concept living spaces, high-end finishes, and designer fixtures, this urban oasis is perfect for those seeking luxury and convenience in a vibrant urban setting.",
+        "selling_price": "$1,200,000",
+        "rental_price_per_night": "$500",
+        "features": [
+            "2 bedrooms",
+            "2 bathrooms",
+            "2000 square feet",
+            "Hardwood flooring",
+            "High ceilings",
+            "Modern kitchen",
+            "Exposed brick",
+            "Fitness center",
+            "Rooftop terrace",
+            "Concierge service"
+        ]
+    },
+    {
+        "title": "Mountain Retreat Cabin",
+        "image": "https://i.ibb.co/xz891dq/exHouse3.jpg",
+        "pricing": "$850,000",
+        "description": "Escape to nature's embrace with this charming mountain retreat cabin. Nestled amidst towering pines and scenic mountain vistas, this cozy cabin offers a serene retreat from the hustle and bustle of city life. Featuring rustic-chic interiors, a stone fireplace, and a spacious deck, this cabin is the perfect haven for outdoor enthusiasts and nature lovers alike.",
+        "selling_price": "$850,000",
+        "rental_price_per_night": "$300",
+        "features": [
+            "3 bedrooms",
+            "2 bathrooms",
+            "2500 square feet",
+            "0.5 acre lot size",
+            "Fireplace",
+            "Deck",
+            "Mountain views",
+            "Hiking trails",
+            "Ski resort within 10 miles",
+            "Hot tub"
+        ]
+    },
+    {
+        "title": "Mansion in the Hills",
+        "image": "https://i.ibb.co/QH43F28/exHouse4.png",
+        "pricing": "$12,000,000",
+        "description": "Elevate your lifestyle with this magnificent hillside mansion. Perched atop a private hilltop estate, this grand residence offers unparalleled luxury and breathtaking views of the surrounding valley. Boasting exquisite architecture, lavish interiors, and resort-style amenities, this mansion is a true masterpiece of elegance and sophistication.",
+        "selling_price": "$12,000,000",
+        "rental_price_per_night": "$5,000",
+        "features": [
+            "7 bedrooms",
+            "9 bathrooms",
+            "15000 square feet",
+            "5 acres lot size",
+            "Guest house",
+            "Wine cellar",
+            "Home gym",
+            "Tennis court",
+            "Infinity pool",
+            "Helipad"
+        ]
+    }
+]

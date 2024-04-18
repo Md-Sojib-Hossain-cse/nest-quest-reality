@@ -13,29 +13,35 @@ const AuthProvider = ({ children }) => {
 
     const [user, setUser] = useState(false);
     const [passwordError, setPasswordError] = useState(null);
+    const [loading , setLoading] = useState(true);
 
     //Register an user
     const createUser = (email, password) => {
+        setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
     }
 
     //Login an user
     const signInUser = (email, password) => {
+        setLoading(true)
         return signInWithEmailAndPassword(auth, email, password);
     }
 
     //Logout current User
     const LogOut = () => {
+        setLoading(true)
         return signOut(auth)
     }
 
     //google Sign In
     const googleSignIn = () => {
+        setLoading(true)
         return signInWithPopup(auth , googleProvider);
     }
 
     //facebook Sign In
     const facebookSignIn = () => {
+        setLoading(true)
         return signInWithPopup(auth , facebookProvider);
     }
 
@@ -44,6 +50,7 @@ const AuthProvider = ({ children }) => {
         onAuthStateChanged(auth , (currentUser) => {
             if(currentUser){
                 setUser(currentUser);
+                setLoading(false);
             }
             else{
                 setUser(null);
@@ -67,6 +74,7 @@ const AuthProvider = ({ children }) => {
         updateUserProfile,
         googleSignIn,
         facebookSignIn,
+        loading,
     }
     return (
         <AuthContext.Provider value={authInfo}>

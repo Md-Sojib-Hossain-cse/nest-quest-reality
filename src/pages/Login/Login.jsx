@@ -4,6 +4,7 @@ import { AuthContext } from "../../providers/AuthProvider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import { IoLogoGoogle, IoLogoFacebook } from "react-icons/io5";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
     const { signInUser, user, LogOut, googleSignIn, facebookSignIn } = useContext(AuthContext);
@@ -71,6 +72,9 @@ const Login = () => {
 
     return (
         <div className="card shrink-0 w-full md:w-2/3 lg:w-1/2 mx-auto shadow-2xl bg-base-100 mt-8">
+            <Helmet>
+                <title> NestQuest Reality | Login</title>
+            </Helmet>
             <div className="bg-blue-700 rounded-t-xl">
                 <h3 className="text-2xl font-bold text-center mt-8 drop-shadow-lg text-white">NestQuest Login!</h3>
                 <div className="pt-6">

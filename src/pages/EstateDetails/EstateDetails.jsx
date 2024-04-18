@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const EstateDetails = () => {
@@ -8,6 +9,9 @@ const EstateDetails = () => {
     const { estate_title, detailed_description, price, status, area, facilities, image, location , banner_title ,banner_description} = currentEstate;
     return (
         <div className="grid md:grid-cols-2 gap-6">
+            <Helmet>
+                <title> NestQuest Reality | Estate Details</title>
+            </Helmet>
             <div className="relative md:col-span-2 h-[40vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh]">
                 <img src={image} alt="property image" className="h-full w-full object-cover rounded-lg" />
                 <div className="absolute top-1/3 w-full flex flex-col justify-center items-center bg-[#13131333] py-4">

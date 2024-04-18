@@ -9,6 +9,7 @@ import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
 import EstateDetails from "../pages/EstateDetails/EstateDetails";
 import ProtectedRoute from "../protectedRoutes/ProtectedRoute";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import ExclusiveProperties from "../pages/ExclusiveProperties/ExclusiveProperties";
 
 const router = createBrowserRouter([
         {
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
                     element : <ProtectedRoute><EstateDetails></EstateDetails></ProtectedRoute>,
                     loader : () => fetch('/estateData.json'),
                 },
+                {
+                    path : "exclusiveProperties",
+                    element : <ProtectedRoute><ExclusiveProperties></ExclusiveProperties></ProtectedRoute>,
+                    loader : () => fetch("/exclusiveProperties.json"),
+                }
             ]
         },
     ]);
