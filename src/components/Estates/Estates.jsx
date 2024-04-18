@@ -18,7 +18,7 @@ const Estates = ({ estateDatas }) => {
                 }
             </div>
             <div className="flex justify-center mt-6">
-                <button onClick={handleShowAll} className="btn text-lg shadow-lg font-bold">{showAll ? "Show Less" : "Show More"}</button>
+                <button onClick={handleShowAll} className="btn text-lg shadow-lg font-bold animate__animated animate__tada animate__repeat-3">{showAll ? "Show Less" : "Show More"}</button>
             </div>
         </div>
     );

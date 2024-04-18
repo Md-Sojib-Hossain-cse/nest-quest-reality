@@ -1,3 +1,5 @@
+import 'animate.css';
+
 const Slider = () => {
     return (
         <div className="mt-8">
